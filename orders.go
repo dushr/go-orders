@@ -16,7 +16,7 @@ const (
 )
 
 type Order struct {
-	ID            string       `datastore:"" json:"id"`
+	ID            int64        `datastore:"" json:"id"`
 	CreatedTS     string       `datastore:"" json:"created_at"`
 	RestaurantID  string       `datastore:"" json:"restaurant_id"`
 	Status        string       `datastore:"" json:"status"`

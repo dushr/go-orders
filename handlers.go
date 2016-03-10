@@ -42,11 +42,12 @@ func OrderIndex(w http.ResponseWriter, r *http.Request) {
 	q := datastore.NewQuery("OrderTest").Ancestor(parentKey(c, "OrderTest"))
 	var orders Orders
 
-	_, err := q.GetAll(c, &orders)
+	keys, err := q.GetAll(c, &orders)
 	HandleError(w, err)
 
-	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
-	w.WriteHeader(http.StatusOK)
+	for i := 0; i < len(orders); i++ {
+		orders[i].ID = keys[i].IntID()
+	}
 
 	// TODO: Hardcoded please change this
 	pagination := Pagination{
@@ -60,6 +61,8 @@ func OrderIndex(w http.ResponseWriter, r *http.Request) {
 		Pagination: pagination,
 	}
 
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
 	err = json.NewEncoder(w).Encode(order_objects)
 	HandleError(w, err)
 }
