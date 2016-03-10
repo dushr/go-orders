@@ -1,7 +1,7 @@
 application: mothership-1246
 runtime: go
 api_version: go1
-version: 1.0
+version: 1-0
 
 handlers:
     - url: /.*
