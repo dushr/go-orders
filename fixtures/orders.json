@@ -1,0 +1,98 @@
+[
+    {
+       "restaurant_id": "5283",
+        "restaurant": {
+            "name": "Tasty Pizza Restaurant",
+            "zipcode": "10117",
+            "city": "Berlin",
+            "Street": "Mohrenstrasse",
+            "Street_no": "60",
+            "phone_local_number": "99888999"
+
+        },
+        "payment_method": "cash",
+        "total_price": "10",
+        "status": "sent",
+        "delivery_info": {
+            "name":         "Philip J.",
+            "lastname":     "Fry",
+            "company":      "Delivery Hero Holding GmbH",
+            "street_name":  "Mohrenstraße",
+            "street_number":"60",
+            "zipcode":      "10117",
+            "city":         "Berlin",
+            "door":         "left",
+            "etage":        "2nd floor",
+
+            "phone":        "01234",
+            "email":        "t.morawiec@pizza.de",
+            "comments":     "extra green slime"
+        },
+        "items": [
+            {
+                "id":           "de305d54-75b4-431b-adb2-eb6b9e546014",
+                "size":         "medium",
+                "name":         "Pizza Alien Invasion",
+                "description":  "Pizza with neutron star crust, radioactive mushrooms and extra cheese",
+                "quantity":     2,
+                "price":        "1.00"
+            },
+            {
+                "id":           "c0305d54-75b4-431b-adb2-eb6b9e546029",
+                "size":         "medium",
+                "name":         "Space Pasta",
+                "description":  "Cosmic ray fusilli with moon dust sauce",
+                "quantity":     3,
+                "price":        "1.00"
+            }
+        ]   
+    },
+    {
+       "restaurant_id": "5283",
+        "restaurant": {
+            "name": "Tasty Pizza Restaurant",
+            "zipcode": "10117",
+            "city": "Berlin",
+            "Street": "Mohrenstrasse",
+            "Street_no": "60",
+            "phone_local_number": "99888999"
+
+        },
+        "payment_method": "cash",
+        "total_price": "10",
+        "status": "sent",
+        "delivery_info": {
+            "name":         "John Snow",
+            "lastname":     "Fry",
+            "company":      "Delivery Hero Holding GmbH",
+            "street_name":  "Mohrenstraße",
+            "street_number":"60",
+            "zipcode":      "10117",
+            "city":         "Berlin",
+            "door":         "left",
+            "etage":        "2nd floor",
+
+            "phone":        "01234",
+            "email":        "j.snow@pizza.de",
+            "comments":     "extra green slime"
+        },
+        "items": [
+            {
+                "id":           "de305d54-75b4-431b-adb2-eb6b9e546014",
+                "size":         "medium",
+                "name":         "Pizza Alien Invasion",
+                "description":  "Pizza with neutron star crust, radioactive mushrooms and extra cheese",
+                "quantity":     2,
+                "price":        "1.00"
+            },
+            {
+                "id":           "c0305d54-75b4-431b-adb2-eb6b9e546029",
+                "size":         "medium",
+                "name":         "Space Pasta",
+                "description":  "Cosmic ray fusilli with moon dust sauce",
+                "quantity":     3,
+                "price":        "1.00"
+            }
+        ]   
+    }
+]
